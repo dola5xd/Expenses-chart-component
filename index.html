@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Expenses chart component</title>
+
+    <link rel="stylesheet" href="./assets/css/output.css" />
+  </head>
+  <body
+    class="bg-Cream-0 min-h-[100vh] overflow-hidden font-DM_Sans flex items-center justify-center max-w-full"
+  >
+    <div id="loader">
+      <span class="dots"></span>
+      <span class="dots"></span>
+      <span class="dots"></span>
+    </div>
+    <div
+      id="continer"
+      class="hidden px-5 opacity-0 transition-opacity duration-[3s] max-[395px]:scale-75"
+    >
+      <div
+        class="bg-Soft_Red-0 p-5 rounded-2xl flex justify-between items-center"
+      >
+        <div class="text-paleOrange-0 cursor-default">
+          <h3 class="text-[1em] font-normal">My balance</h3>
+          <p class="text-[1.5em] font-semibold" id="balance"></p>
+        </div>
+        <img src="./assets/images/logo.svg" alt="logo" />
+      </div>
+      <div class="bg-paleOrange-0 my-7 rounded-lg py-7 px-5">
+        <div>
+          <h1 class="text-DarkBrown-0 text-[1.5em] font-semibold">
+            Spending - Last 7 days
+          </h1>
+          <div
+            class="mt-7 flex items-end justify-between gap-[7px]"
+            id="chart"
+          ></div>
+        </div>
+        <div class="border-t-[1px] flex items-center justify-between pt-5 mt-7">
+          <div>
+            <h3 class="cursor-default text-MediumBrown-0 text-[0.85em]">
+              Total this month
+            </h3>
+            <p
+              class="cursor-default text-DarkBrown-0 font-bold text-[1.7em]"
+              id="total"
+            ></p>
+          </div>
+          <div class="text-right mt-[30px]">
+            <h3 class="cursor-default text-DarkBrown-0 font-bold text-[0.8em]">
+              +2.4%
+            </h3>
+            <p class="cursor-default text-MediumBrown-0">from last month</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
